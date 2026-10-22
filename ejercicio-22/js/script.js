@@ -2,6 +2,7 @@
 const btn = document.getElementById("btn");
 const resultado = document.getElementById("resultado");
 
+//Función para deshabilitar el botón
 function deshabilitarBoton() {
     btn.disabled = true;
     
@@ -10,6 +11,7 @@ function deshabilitarBoton() {
     resultado.appendChild(p);
 }
 
+//Evento de click
 btn.addEventListener('click', () => {
     deshabilitarBoton();
 });
