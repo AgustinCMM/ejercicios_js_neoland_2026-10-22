@@ -29,7 +29,8 @@ btn.addEventListener('click', () => {
         }
         
         inputTotal.value = resultado;
-        //resul.textContent = `El resultado es: ${resultado}`;        
+        //resul.textContent = `El resultado es: ${resultado}`;
+
         const p = document.createElement("p");
         p.textContent = `El resultado es: ${resultado}`;
         resul.appendChild(p);
