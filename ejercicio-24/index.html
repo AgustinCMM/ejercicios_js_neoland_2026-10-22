@@ -56,9 +56,7 @@
           <p class="eyebrow">Consigna</p>
           <p class="prompt">
             Cambiador de estilos: Crea un módulo que exporte una función que
-            devuelva nombres de colores ("red", "blue", "green"). Usa el DOM
-            para cambiar el color del texto de un párrafo al hacer clic (usando
-            elemento.style.color).
+            devuelva nombres de colores ("red", "blue", "green"). Usa el DOM para cambiar el color del texto de un párrafo al hacer clic (usando elemento.style.color).
           </p>
         </div>
         <p class="status-feedback" data-state-message aria-live="polite"></p>
@@ -66,7 +64,12 @@
       <section class="panel result-panel" aria-labelledby="resultados">
         <p class="eyebrow">Salida</p>
         <h2 id="resultados">Resultados</h2>
-        <div class="result-box" id="resultado" aria-live="polite"></div>
+        <button type="button" id="red">Rojo</button>
+        <button type="button" id="blue">Azul</button>
+        <button type="button" id="green">Verde</button>
+        <div class="result-box" id="resultado" aria-live="polite">
+            <p id="texto">Texto que cambia de color según la interacción</p>
+        </div>
       </section>
     </main>
     <footer class="footer">
