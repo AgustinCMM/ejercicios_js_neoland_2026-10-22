@@ -52,7 +52,7 @@
             </button>
           </div>
         </div>
-        
+
         <div class="prompt-block">
           <p class="eyebrow">Consigna</p>
           <p class="prompt">
@@ -67,17 +67,18 @@
       <section class="panel result-panel" aria-labelledby="resultados">
         <p class="eyebrow">Salida</p>
         <h2 id="resultados">Resultados</h2>
-        <input type="number" id="num_uno">
-        <select id="operador">
+        <div class="result-box" id="resultado" aria-live="polite">
+          <input type="number" id="num_uno" />
+          <select id="operador">
             <option value="+">+</option>
             <option value="-">-</option>
             <option value="*">*</option>
             <option value="/">/</option>
-        </select>
-        <input type="number" id="num_dos">
-        <input type="text" id="total" hidden>
-        <button id="btn">Calcular</button>
-        <div class="result-box" id="resultado" aria-live="polite"></div>
+          </select>
+          <input type="number" id="num_dos" />
+          <input type="text" id="total" hidden />
+          <button id="btn">Calcular</button>
+        </div>
       </section>
     </main>
     <footer class="footer">
