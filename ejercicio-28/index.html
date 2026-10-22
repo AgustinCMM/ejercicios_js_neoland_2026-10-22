@@ -65,16 +65,16 @@
       <section class="panel result-panel" aria-labelledby="resultados">
         <p class="eyebrow">Salida</p>
         <h2 id="resultados">Resultados</h2>
-        <select id="usuario">
+        <div class="result-box" id="resultado" aria-live="polite">
+          <select id="usuario">
             <option value="" disabled selected>Elegir una opción</option>
             <option value="piedra">Piedra</option>
             <option value="papel">Papel</option>
             <option value="tijera">Tijera</option>
-        </select>
-        <button type="button" id="btn-jugar">Jugar</button>
-        <input type="text" id="programa" readonly>
-        <div class="result-box" id="resultado" aria-live="polite">
-            <p id="mensaje"></p>
+          </select>
+          <button type="button" id="btn-jugar">Jugar</button>
+          <input type="text" id="programa" readonly />
+          <p id="mensaje"></p>
         </div>
       </section>
     </main>
