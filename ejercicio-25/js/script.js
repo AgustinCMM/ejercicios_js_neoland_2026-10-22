@@ -13,6 +13,6 @@ btnCrear.addEventListener('click', ()=> {
         let correo = crearCorreo(nom, emp);
         resultado.textContent = correo;
     } else {
-        console.log("Ingrese texto válido en ambos campos")
+        resultado.textContent = "Ingrese texto válido en ambos campos";
     }
 })

@@ -66,12 +66,14 @@
       <section class="panel result-panel" aria-labelledby="resultados">
         <p class="eyebrow">Salida</p>
         <h2 id="resultados">Resultados</h2>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre">
-        <label for="empresa">Empresa:</label>
-        <input type="text" id="empresa">
-        <button type="button" id="btn-crear">Crear correo</button>
-        <div class="result-box" id="resultado" aria-live="polite"></div>
+        <div class="result-box" aria-live="polite">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" />
+          <label for="empresa">Empresa:</label>
+          <input type="text" id="empresa" />
+          <button type="button" id="btn-crear">Crear correo</button>
+          <p id="resultado"></p>
+        </div>
       </section>
     </main>
     <footer class="footer">
