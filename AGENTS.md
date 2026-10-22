@@ -65,20 +65,19 @@ Estructura de referencia:
     │   │   └── styles.css
     │   └── js/
     │       └── main.js
-    └── ejercicios/
-        ├── ejercicio-XX/
-        │   ├── index.html
-        │   ├── css/
-        │   │   └── styles.css
-        │   └── js/
-        │       └── script.js
-        ├── ejercicio-YY/
-        │   ├── index.html
-        │   ├── css/
-        │   │   └── styles.css
-        │   └── js/
-        │       └── script.js
-        └── ...
+    ├── ejercicio-XX/
+    │   ├── index.html
+    │   ├── css/
+    │   │   └── styles.css
+    │   └── js/
+    │       └── script.js
+    ├── ejercicio-YY/
+    │   ├── index.html
+    │   ├── css/
+    │   │   └── styles.css
+    │   └── js/
+    │       └── script.js
+    └── ...
 
 Los identificadores XX e YY son ejemplos. Utilizar los números originales de las consignas siempre que existan.
 
@@ -357,4 +356,8 @@ Este anexo reemplaza cualquier indicación anterior de guardar estados en `estad
 
 
 ## Anexo: carpetas numeradas
-Nombrar las carpetas de ejercicios `ejercicios/ejercicio-21/`, `ejercicios/ejercicio-22/` y así sucesivamente para que queden en orden. El título descriptivo permanece dentro de la página y en el índice; no es necesario incluirlo en el nombre de carpeta. Actualizar todos los enlaces al renombrar.
+Nombrar las carpetas de ejercicios `ejercicio-21/`, `ejercicio-22/` directamente en la raíz para que queden en orden. El título descriptivo permanece dentro de la página y en el índice; no es necesario incluirlo en el nombre de carpeta. Actualizar todos los enlaces al renombrar.
+
+
+## Anexo: carpetas de ejercicios en la raíz
+Esta instrucción posterior prevalece sobre cualquier referencia previa a una carpeta contenedora `ejercicios/`: cada carpeta numerada de ejercicio debe ser hija directa de la raíz del proyecto (`/ejercicio-21/`, `/ejercicio-22/`, etc.). Mantener dentro de cada una su `index.html`, `css/styles.css` y `js/script.js`, y ajustar las rutas relativas de todas las páginas.

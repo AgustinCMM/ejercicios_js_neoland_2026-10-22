@@ -13,18 +13,18 @@ Se incluyen exclusivamente las 20 consignas bajo «Bloque 2: Retos avanzados (20
 - `index.html`: índice de los ejercicios seleccionados.
 - `assets/css/styles.css`: identidad visual compartida, navegación, tarjetas y paneles.
 - `assets/js/main.js`: comportamientos generales, sin lógica de ejercicios.
-- `ejercicios/ejercicio-<número>/`: página, hoja CSS y plantilla JS independientes por ejercicio.
+- `ejercicio-<número>/`: página, hoja CSS y plantilla JS independientes por ejercicio.
 - `funciones.docx`: documento fuente, conservado sin cambios.
 
 ## Uso
 Abre `index.html` en un navegador moderno y elige un ejercicio. La navegación permite volver al inicio, abrir cualquier reto y avanzar al anterior o siguiente. El enlace activo identifica el ejercicio actual.
 
-Escribe la solución en `ejercicios/ejercicio-<slug>/js/script.js`. Las plantillas JS solo contienen comentarios breves y no incluyen implementaciones ni resultados de ejemplo.
+Escribe la solución en `ejercicio-<número>/js/script.js`. Las plantillas JS solo contienen comentarios breves y no incluyen implementaciones ni resultados de ejemplo.
 
 Las áreas de resultados preparan un contenedor vacío cuando la consigna dirige la salida a pantalla. Para las consignas que piden explícitamente imprimir en consola se muestra «(ver en consola)». Abre las herramientas de desarrollador y selecciona Console/Consola. Las consignas sin destino explícito conservan un contenedor vacío.
 
 ## Añadir ejercicios
-Crea una carpeta independiente siguiendo `ejercicios/ejercicio-41/` con `index.html` (o el siguiente número disponible), `css/styles.css` y `js/script.js`. Conserva número, título, consigna y orden fuente; añade el enlace al índice y a la navegación. Prepara resultados según el destino expresado en la consigna.
+Crea una carpeta independiente siguiendo `ejercicio-41/` con `index.html` (o el siguiente número disponible), `css/styles.css` y `js/script.js`. Conserva número, título, consigna y orden fuente; añade el enlace al índice y a la navegación. Prepara resultados según el destino expresado en la consigna.
 
 ## Restricciones
 Solo HTML, CSS y JavaScript vanilla. Sin bibliotecas externas, frameworks, dependencias, compilación, backend, resultados ficticios, tips o código que adelante la solución.
