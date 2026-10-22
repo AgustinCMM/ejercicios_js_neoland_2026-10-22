@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "statuses": {
+    "calculadora-con-historial": "resuelto",
+    "boton-de-un-solo-uso": "resuelto",
+    "contador-en-pantalla": "resuelto",
+    "cambiador-de-estilos": "resuelto",
+    "generador-de-correos": "resuelto",
+    "cuenta-caracteres": "resuelto",
+    "alias-de-importacion": "resuelto",
+    "piedra-papel-o-tijeras": "pendiente",
+    "replicador": "pendiente",
+    "boton-que-se-autodescribe": "pendiente",
+    "validador-de-edad": "pendiente",
+    "inversor-de-palabras": "pendiente",
+    "importacion-masiva": "pendiente",
+    "lista-de-tareas-basica": "pendiente",
+    "multi-modulos": "pendiente",
+    "contrasena-secreta": "pendiente",
+    "eventos-de-teclado": "pendiente",
+    "la-funcion-espia": "pendiente",
+    "calculadora-dinamica": "pendiente",
+    "app-completa-modular": "pendiente"
+  }
+}

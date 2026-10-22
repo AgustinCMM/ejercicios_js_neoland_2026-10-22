@@ -82,10 +82,10 @@ document.querySelectorAll('[data-toggle-status]').forEach((button) => {
   button.addEventListener('click', () => {
     const id = button.dataset.toggleStatus;
     state.statuses[id] = state.statuses[id] === 'resuelto' ? 'pendiente' : 'resuelto';
-    if (saveState()) {
-      renderStatuses();
-      announce('Estado guardado en este navegador.', 'success');
-    }
+    const saved = saveState();
+    renderStatuses();
+    if (saved) announce('Estado guardado en este navegador.', 'success');
+    else announce('El estado cambió en esta página, pero este navegador no permitió guardarlo. Exporta el JSON para conservarlo.', 'error');
   });
 });
 
@@ -95,10 +95,10 @@ document.querySelector('[data-import-status]')?.addEventListener('change', async
   if (!file) return;
   try {
     state = parseState(await file.text());
-    if (saveState()) {
-      renderStatuses();
-      announce('Estados importados y guardados en este navegador.', 'success');
-    }
+    const saved = saveState();
+    renderStatuses();
+    if (saved) announce('Estados importados y guardados en este navegador.', 'success');
+    else announce('Estados importados en esta página, pero el navegador no permitió guardarlos localmente. Exporta el JSON para conservarlos.', 'error');
   } catch (error) {
     announce(error instanceof SyntaxError ? 'El archivo seleccionado no contiene JSON válido.' : error.message, 'error');
   } finally {

@@ -361,3 +361,7 @@ Nombrar las carpetas de ejercicios `ejercicio-21/`, `ejercicio-22/` directamente
 
 ## Anexo: carpetas de ejercicios en la raíz
 Esta instrucción posterior prevalece sobre cualquier referencia previa a una carpeta contenedora `ejercicios/`: cada carpeta numerada de ejercicio debe ser hija directa de la raíz del proyecto (`/ejercicio-21/`, `/ejercicio-22/`, etc.). Mantener dentro de cada una su `index.html`, `css/styles.css` y `js/script.js`, y ajustar las rutas relativas de todas las páginas.
+
+
+## Anexo: funcionamiento directo desde archivos locales
+Esta instrucción posterior prevalece sobre cualquier sugerencia de iniciar un servidor local: el sitio debe abrirse directamente desde la raíz `index.html`, sin localhost ni otro servidor. Los scripts de las páginas de ejercicios se enlazan con `type="module"` (`<script type="module" src="./js/script.js"></script>`) para permitir `import`/`export` en las consignas. Documentar que los ejercicios cuya consigna exige `import`/`export` de módulos ES no pueden ejecutarse en navegadores que bloquean módulos bajo `file://` por CORS; no alterar ni resolver esas consignas para ocultar la restricción.
