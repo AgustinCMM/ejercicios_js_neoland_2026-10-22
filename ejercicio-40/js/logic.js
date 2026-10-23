@@ -1,3 +1,4 @@
+//Funciones
 export function calcular(a, b, operador) {
   switch (operador) {
     case "+":

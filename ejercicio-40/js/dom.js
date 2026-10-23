@@ -1,3 +1,4 @@
+//Manejo del DOM
 import { calcular } from "./logic.js";
 
 export function inicializarApp() {
@@ -25,6 +26,7 @@ export function inicializarApp() {
 
     resultado.value = calcular(a, b, simbolo);
     operacion.textContent = `${a} ${simbolosVisibles[simbolo] ?? simbolo} ${b}`;
+
     mensaje.textContent = "";
     primerNumero.value = "";
     segundoNumero.value = "";
