@@ -1,3 +1,4 @@
+// Implementa aquí tu solución.
 import { calcular } from "./functions.js";
 
 const primerNumero = document.getElementById("num_uno");
