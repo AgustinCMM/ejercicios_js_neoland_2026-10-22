@@ -1,1 +1,89 @@
-/* Estilos específicos: no se requieren para este ejercicio. */
+.calculator-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.calculator-inputs {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5.5rem minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 0.65rem;
+}
+
+.calculator-field {
+  display: grid;
+  min-width: 0;
+  gap: 0.35rem;
+  color: #43534b;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.calculator-field input,
+.calculator-field select {
+  width: 100%;
+  min-width: 0;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #d8e2dc;
+  border-radius: 0.6rem;
+  background: #fff;
+  color: #1b2922;
+}
+
+.calculator-field input:focus-visible,
+.calculator-field select:focus-visible {
+  outline: 3px solid #b9d9ce;
+  outline-offset: 2px;
+}
+
+.calculator-inputs button {
+  min-height: 2.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 0;
+  border-radius: 0.6rem;
+  background: #145c50;
+  color: #fff;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.calculator-inputs button:hover {
+  background: #0b493f;
+}
+
+.calculator-result {
+  max-width: 18rem;
+}
+
+.calculator-result p {
+  min-height: 1.25rem;
+  margin: 0 0 0.35rem;
+  color: #43534b;
+  font-variant-numeric: tabular-nums;
+}
+
+.calculator-message {
+  min-height: 1.25rem;
+  margin: 0;
+  color: #9a3d36;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 440px) {
+  .calculator-inputs {
+    grid-template-columns: minmax(0, 1fr) 4.25rem minmax(0, 1fr) auto;
+    gap: 0.35rem;
+  }
+
+  .calculator-field {
+    font-size: 0.7rem;
+  }
+
+  .calculator-inputs button {
+    padding-inline: 0.55rem;
+    font-size: 0.75rem;
+  }
+}
